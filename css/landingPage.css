@@ -49,7 +49,7 @@
         padding: 0.5vh;
         margin: 0;
         border: none;
-        background-color: #FCFAEE;
+        background-color: #fcfaee;
     }
     .searchButton {
         width: 30px;
@@ -120,7 +120,7 @@
             "title title title"
             "snipet snipet snipet"
             "link link link";
-        background: linear-gradient(to bottom right, #BED7DC, #F1EEDC);
+        background: linear-gradient(to bottom right, #bed7dc, #f1eedc);
         border-radius: 25px;
         padding: 10px;
         /* Add shadows to create the "card" effect */
@@ -191,7 +191,7 @@
     }
 
     #emailInput {
-        background-color: #FCFAEE;
+        background-color: #fcfaee;
         height: 50%;
         width: 150px;
         padding: 0.5vh;
@@ -304,8 +304,8 @@
     }
     .blogPostSummary {
         height: 200px;
-        border: 2px solid #BED7DC;
-        background: linear-gradient(to bottom, #BED7DC, #F1EEDC 80%);
+        border: 2px solid #bed7dc;
+        background: linear-gradient(to bottom, #bed7dc, #f1eedc 80%);
     }
 
     #designSystemLink {
@@ -381,7 +381,7 @@
         margin: 0;
         border: none;
         width: 50%;
-        background-color: #FCFAEE;
+        background-color: #fcfaee;
     }
     .searchButton2 {
         width: 30px;
@@ -410,7 +410,7 @@
             "snipet snipet snipet"
             "link link link";
         border: none;
-        background: linear-gradient(to bottom right, #BED7DC, #F1EEDC);
+        background: linear-gradient(to bottom right, #bed7dc, #f1eedc);
         border-radius: 25px;
         padding: 10px;
     }

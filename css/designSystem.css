@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background-color: #F1EEDC;
+    background-color: #f1eedc;
     color: #606c76;
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-size: 1.6em;
@@ -66,7 +66,7 @@ h6 {
 
 
 a {
-    color: #8D2DC8;
+    color: #8d2dc8;
     text-decoration: none;
 }
 
@@ -75,7 +75,7 @@ a:focus, a:hover {
 }
 
 .button, button {
-    background-color: #F1EEDC;
+    background-color: #f1eedc;
     border: none;
     background-position: center;
     background-size:cover;
@@ -91,7 +91,7 @@ a:focus, a:hover {
 }
 
 .button:focus, .button:hover, button:focus, button:hover {
-    background-color: #ABABAB;
+    background-color: #ababab;
 }
 
 .button:active, button:active {
