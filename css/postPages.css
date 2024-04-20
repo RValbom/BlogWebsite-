@@ -1,0 +1,89 @@
+.postPageContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 85vh 5vh;
+    grid-template-areas: 
+        "hd"
+        "main"
+        "ft";
+    padding: 0px;
+}
+
+
+/* ########################## */
+/* ########## Post ########## */
+    .post {
+        padding: 3vw;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    #postContentOrigin {
+        display: grid;
+        grid-template-columns: 20vw 10vw 60vw;
+        grid-template-rows: 3vh 3vh;
+        grid-template-areas: 
+            "postTopLeft postMiddle postRight"
+            "postBottomLeft postMiddle postRight";
+        width: 100%;
+        margin-bottom: 1vh;
+    }
+    #postContentAuthorName {
+        grid-area: postTopLeft;
+        margin-bottom: none;
+        text-align: left;
+    }
+    #postContentDate {
+        grid-area: postBottomLeft;
+        text-align: left;
+    }
+    #postContentAuthorPhoto {
+        grid-area: postMiddle;
+        text-align: left;
+        height: 100%;
+    }
+    #imgPostContentAuthorPhoto {
+        max-height: 6vh;
+        border-radius: 50%;
+    }
+
+    #postContentAuthorBio {
+        grid-area: postRight;
+        font-style: oblique;
+        padding: 1vw;
+    }
+
+    #postSocialMediaLinks {
+        text-align: left;
+        margin-bottom: 1vh;
+        
+    }
+
+    .imageWithCaption {
+        text-align: center;
+        margin: 3vh;
+    }
+
+    .imgPostContent  {
+        object-fit:contain;
+        width: 80vw;
+		max-width: 1000px;
+
+    }
+
+    .postContentImageCaption {
+        font-style: oblique;
+    }
+    
+    .navPosts {
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content:space-evenly;
+        margin-top: 5vh;
+    }
+
+    .homePageLink {
+        text-align: center;
+        margin: 3vh;
+    }

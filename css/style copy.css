@@ -1,0 +1,479 @@
+@import url("/css/designSystem.css");
+
+body {
+    background-color: #faf0e6;    
+}
+
+.pageContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 15vh 70vh 5vh;
+    grid-template-areas: 
+        "hd"
+        "bi"
+        "main"
+        "ft";
+    padding: 0px;
+}
+
+.postPageContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 85vh 5vh;
+    grid-template-areas: 
+        "hd"
+        "main"
+        "ft";
+    padding: 0px;
+}
+
+
+/* ############################ */
+/* ########## Header ########## */
+    .header {
+        grid-area: hd;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content:space-evenly;
+        padding: 10px;
+    }
+
+    #imgLogo {
+        border-radius: 40%;
+        width: auto;
+        max-height: 50%;
+
+        filter:opacity(70%);
+    }
+
+    #blogTitle {
+        color: chocolate;
+    }
+
+
+    #denormalizedMenu {
+        display: none;
+    }
+
+    #searchBar {
+        display: flex;
+        flex-direction: row;
+        align-items:top;
+        justify-content:flex-start;
+        padding: 5px;
+    }
+
+    #keywordInput {
+        height: 15px;
+        width: 100px;
+        padding: 0.5vh;
+        margin: 0;
+        border: none;
+        background-color: #FEFAF6;
+    }
+    .searchButton {
+        background-color: #faf0e6;
+        border: none;
+        width: 30px;
+        height: 30px;
+        background-image: url("/assets/images/searchLense.png");
+        background-position: center;
+        background-size:cover;
+        opacity: 0.65;
+    }
+
+
+/* ########################### */
+/* ########## Intro ########## */
+    #searchBar2 {
+        display: none;
+    }
+
+    .blogIntro {
+        grid-area: bi;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+
+    #descIntro {
+        position: absolute;
+        margin-right: 20px;
+        padding: 0.5vh;
+        height: 12vh;
+        text-align: center;
+        align-content: center;
+        font-style: oblique;
+        font-weight: bold;
+
+    }
+    #imgIntro {
+        object-fit: cover;
+        object-position: 100% 50%;
+        height: 13vh;
+        width: 100%;
+        border-radius: 20px;
+        opacity: 0.2;
+    }
+
+
+/* ############################# */
+/* ########## Content ########## */
+    .content {
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        align-items:stretch;
+        justify-content:flex-start;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .blogPostSummary {
+        display: grid;
+        height: 180px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2vh 2vh 2vh 1fr 2vh;
+        grid-template-areas: 
+            "topLeft topMiddle topTopRight"
+            "topLeft topMiddle topRight"
+            "title title title"
+            "snipet snipet snipet"
+            "link link link";
+        background: linear-gradient(to bottom right, #FABD92, #faf0e6);
+        border-radius: 25px;
+        padding: 10px;
+    }
+
+
+    #contentSection {
+        grid-column: 1;
+        grid-row: 1 / 3;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+    #contentAuthorPhoto {
+        grid-column: 2;
+        grid-row: 1 / 3;
+        text-align: right;
+        height: 100%;
+    }
+    #contentAuthorPhotoImage {
+        max-height: 4vh;
+        border-radius: 50%;
+    }
+    #contentAuthorName {
+        grid-area: topTopRight;
+        margin-bottom: none;
+        text-align: left;
+    }
+    #contentDate {
+        grid-area: topRight;
+        text-align: left;
+    }
+    #contentTitle {
+        grid-area: title;
+    }
+    #contentSnipet {
+        grid-area: snipet;
+    }
+    #contentLink {
+        grid-area: link;
+    }
+
+
+/* ########################## */
+/* ########## Post ########## */
+    .post {
+        padding: 20px;
+    }
+
+    #postContentOrigin {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2vh 2vh;
+        grid-template-areas: 
+            "postTopLeft postRight"
+            "postBottomLeft postRight";
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    #postContentAuthorName {
+        grid-area: postTopLeft;
+        margin-bottom: none;
+        text-align: left;
+    }
+    #postContentDate {
+        grid-area: postBottomLeft;
+        text-align: left;
+    }
+    #postContentAuthorPhoto {
+        grid-area: postRight;
+/*        text-align: right;*/
+        height: 100%;
+    }
+    #postContentAuthorPhotoImage {
+        max-height: 4vh;
+        border-radius: 50%;
+    }
+    #postContentDadDaughterBedImage {
+        object-fit:contain;
+    /*    object-position: 100% 50%;*/
+        height: 35vh;
+
+    }
+
+/* ############################ */
+/* ########## Footer ########## */
+
+    .footer {
+        margin: 1vh;
+        grid-area: ft;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content:space-around;
+    }
+
+    #newsletterRegister {
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content:flex-start;
+        padding: 5px;
+    }
+
+    #emailInput {
+        height: 50%;
+        width: 150px;
+        padding: 0.5vh;
+        margin: 0;
+        border: groove 1px;
+
+    }
+
+    .arrowButton {
+        background-color: white;
+        border: none;
+        width: 15px;
+        height: 15px;
+        padding: 0.5vh;
+        margin: 0;
+        background-image: url("/assets/images/iconArrowRightLight.png");
+        background-position: center;
+        background-size:cover;
+    }
+
+    #socialMediaLinks {
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content:space-evenly;
+        gap: 3vw;
+        padding: 0.5vh;
+    }
+
+    .socialMedia {
+        background-color: white;
+        border: none;
+        width: 15px;
+        height: 15px;
+        margin: 0;
+        background-position: center;
+        background-size:cover;
+    }
+
+    .facebook {
+        background-image: url("/assets/images/iconFacebook.png");
+    }
+
+    .instagram {
+        background-image: url("/assets/images/iconinstagram.png");
+    }
+
+    .twitter {
+        background-image: url("/assets/images/icontwitter.png");
+    }
+
+    .pinterest {
+        background-image: url("/assets/images/iconpinterest.png");
+    }
+
+    .linkedin {
+        background-image: url("/assets/images/iconlinkedin.png");
+    }
+
+    .gmail {
+        background-image: url("/assets/images/icongmail.png");
+    }
+
+    #contacts {
+        text-align:right;
+        padding: 0.5vh;
+    }
+
+    #goBack {
+        text-align:center;
+        padding: 0.5vh;
+    }
+
+
+
+@media screen and (min-width: 1000px) /*and (max-width: 1200px)*/ {
+
+    .blogIntro {
+        grid-area: bi;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content:flex-start;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 0;
+        padding-bottom: 0;
+        gap: 100px;
+    }
+
+    #descIntro {
+        position:relative;
+        width: 50%;
+        margin-right: 0;
+        padding: 0;
+        height: 15vh;
+        align-content: center;
+    }
+
+    #imgIntro {
+        height: 15vh;
+        width: 50%;
+        opacity: 0.7;
+    }
+    
+    .content {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 25% 25% 25%;
+        grid-column-gap: 30px;
+        grid-row-gap: 50px;
+
+    }
+    .blogPostSummary {
+        height: 200px;
+        border: 2px solid #FABD92;
+        background: linear-gradient(to bottom, #FABD92, #faf0e6 80%);
+    }
+}
+@media screen and (min-width: 1500px) /*and (max-width: 1200px)*/ {
+    
+    .pageContainer {
+        display: grid;
+        grid-template-columns: 35vw 65vw;
+        grid-template-rows: 10vh 85vh 5vh;
+        grid-template-areas: 
+            "hd hd"
+            "navBar main"
+            "ft ft";
+    }
+    
+    #searchBar {
+        display: none;
+    }
+    /*
+        #keywordInput >>> pointer-events:none;
+        .searchButton >>> cursor: not-allowed; // pointer-events: none;
+    */
+    
+    #denormalizedMenu {
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content:space-evenly;
+
+    }
+    
+    #menuLink {
+        padding: 30px;
+    }
+    
+    .blogIntro {
+        grid-area: navBar;
+        display: flex;
+        flex-direction: column;
+        align-items:left;
+        justify-content:flex-start;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        gap: 50px;
+    }
+
+    #descIntro {
+        width: 75%;
+        position:relative;
+        height: auto;
+        padding-top: 50px;
+    }
+    
+    #imgIntro {
+        border-radius: 10%;
+        height: auto;
+        width: 75%;
+        opacity: 0.8;
+    }
+
+    #searchBar2 {
+        margin-top: 2.5vh;
+        display: inherit;
+        width: 75%;
+    }
+    #keywordInput2 {
+        height: 15px;
+        padding: 0.5vh;
+        margin: 0;
+        border: none;
+        width: 50%;
+        background-color: #FEFAF6;
+    }
+    .searchButton2 {
+        background-color: #faf0e6;
+        border: none;
+        width: 30px;
+        height: 30px;
+        background-image: url("/assets/images/searchLense.png");
+        background-position: center;
+        background-size:cover;
+        opacity: 0.65;
+    }
+    
+    .content {
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        align-items:stretch;
+        justify-content:flex-start;
+    }
+
+    .blogPostSummary {
+        display: grid;
+        width: 100;
+        height: 180px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "topLeft topMiddle topTopRight"
+            "topLeft topMiddle topRight"
+            "title title title"
+            "snipet snipet snipet"
+            "link link link";
+        border: none;
+    background: linear-gradient(to bottom right, #FABD92, #faf0e6);
+        border-radius: 25px;
+        padding: 10px;
+    }
+}
